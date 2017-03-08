@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Name of the Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/humanObjects.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/adventure.js"></script>
+    <script src="js/elfObjects.js"></script>
+    <script src="js/game.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+
+
+    <div class="console">
+        <p>Your magic scroll reads...
+        <div id="cout"></div>
+        <div id="input">
+            <input type="text" id="constext"/>
+        </div>
+    </div>
+    <div class="buttons">
+
+        <p>What will your Hero be called?</p>
+        <input type="text" id="playerName"/><br>
+        <p>What will your Hero's race be?</p>
+        <select size="9" id="playerRace">
+            <option value=1>Human</option>
+            <option value=2>Elf</option>
+            <option value=3>Snake</option>
+            <option value=4>Dwarf</option>
+            <option value=5>Angel</option>
+            <option value=6>Demon</option>
+            <option value=7>Baby</option>
+            <option value=8>Dog</option>
+            <option value=9>Tree</option>
+        </select>
+
+    </div>
+
+
+    <!--<button onclick="test()">test</button>-->
+    <button onclick="createChar()"id="disappear">Create your Character</button>
+    <button onclick="tree_on_create()"id="command">Enter Command</button>
+    <button onclick="ready()"id="ready">Fight!</button>
+    <div id="attacks">
+        <button onclick="attackSlash()"id="slash">SLASH</button>
+        <button onclick="attackBash()"id="bash">BASH</button>
+        <button onclick="attackTackle()"id="tackle">TACKLE</button>
+        <button onclick="attackStun()"id="stun">STUN</button>
+    </div>
+    <div class="characters">
+
+        <img id="human" src="http://www.werockthespectrumkidsgym.com/wp-content/uploads/2016/06/role-play-costume-set-knight-1-300x300.png"/>
+        <img id="elf" src="http://harshlife.net/wp-content/uploads/2016/08/Download_elf_shelf-300x300.jpg"/>
+        <button onclick="playSnake()" id="snake">Play</button>
+        <img id="dwarf" src="https://d919ce141ef35c47fc40-b9166a60eccf0f83d2d9c63fa65b9129.ssl.cf5.rackcdn.com/images/243118.2e16d0ba.fill-300x300.jpg"/>
+        <img id="angel" src="https://images-na.ssl-images-amazon.com/images/I/41EFrJSBc7L._SY300_.jpg"/>
+        <img id="demon" src="http://lh4.googleusercontent.com/-ex53qpGUJA4/AAAAAAAAAAI/AAAAAAAAACQ/XMtY02GmojY/photo.jpg?sz=300"/>
+        <img id="baby" src="https://s-media-cache-ak0.pinimg.com/736x/10/5e/4d/105e4da6a0464150ca59900ab7e3c758.jpg"/>
+        <img id="dog" src="http://img.memecdn.com/derp-dog_fb_2235399.jpg"/>
+        <img id="tree" src="http://www.immediateentourage.com/ie/wp-content/uploads/2010/04/Another+Tree-300x300.png"/>
+
+        <img class="enemy" id="knight" src="https://images-na.ssl-images-amazon.com/images/I/51HAmAE-J2L._SY300_.jpg"/>
+        <img class="enemy" id="goblin" src="http://i.ebayimg.com/images/g/odIAAOxyyrRR8l66/s-l300.jpg"/>
+        <img class="enemy" id="slime" src="https://images-na.ssl-images-amazon.com/images/I/51%2BS1Q%2BS5fL._SY300_.jpg"/>
+        <img class="enemy" id="spider" src="http://www.petlou.com/image/cache/data/Dog%20Toys/Plush%20Toys/Cute%20Animals/Cute%20Animals%20Medium/Cute%20Animal%20Spider-300x300.jpg"/>
+        <img class="enemy" id="arachnid" src="https://images-na.ssl-images-amazon.com/images/I/411HaXB-6cL._SY300_.jpg"/>
+    </div>
+    <div class="bars">
+        <div id="health">Your Health:</div>
+        <div id="mana">Your Mana:</div>
+        <div id="NPCHealth">NPC Health:</div>
+        <div id="potion">Remaining Potions:</div>
+    </div>
+</body>
+</html>

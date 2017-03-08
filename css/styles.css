@@ -1,0 +1,62 @@
+
+body {
+    font-family: OPTIBelwe-Medium;
+    vertical-align: top;
+    background-image: url('http://2.bp.blogspot.com/-rFybmtIlHX0/UiATigq_GvI/AAAAAAAAJN4/aPFdvSil73M/s1600/Background-Scroll6.jpg');
+    repeat: no-repeat;
+}
+
+button {
+
+    font-size: 30px;
+    border-radius: 8px;
+    background-color:#DFDFDF;
+    font-family: OPTIBelwe-Medium;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+div {
+    margin: 10px 0px;
+
+}
+
+
+.characters {
+    width: 50px;
+    display:inline;
+}
+
+#cout {
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 1px;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+#health {
+    color: red;
+}
+
+#mana {
+    color: blue;
+}
+
+#NPCHealth{
+    color: red;
+}
+
+#potion {
+    color: red;
+}
+
+.enemy {
+    border: 2px solid black;
+}
+
+.enemyselected {
+    border: 2px solid red;
+}
